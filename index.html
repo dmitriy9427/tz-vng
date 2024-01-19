@@ -4,44 +4,58 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Север связь</title>
   </head>
   <body>
     <header class="header">
       <img class="header__logo" src="./images/logo.svg" alt="icon-logo" />
-      <nav class="header__navigation">
-        <ul class="header__navigation-list">
-          <li class="header__navigation-list-item">Интернет</li>
-          <li class="header__navigation-list-item">Телевидение</li>
-          <li class="header__navigation-list-item">Выггодно</li>
-          <li class="header__navigation-list-item">Видеонаблюдение</li>
-          <li class="header__navigation-list-item">Оборудование</li>
-          <li class="header__navigation-list-item">Информация</li>
-          <li class="header__navigation-list-item">Контакты</li>
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-list__item">Интернет</li>
+          <li class="navigation-list__item">Телевидение</li>
+          <li class="navigation-list__item">Выггодно</li>
+          <li class="navigation-list__item">Видеонаблюдение</li>
+          <li class="navigation-list__item">Оборудование</li>
+          <li class="navigation-list__item">Информация</li>
+          <li class="navigation-list__item">Контакты</li>
         </ul>
       </nav>
       <p>+7 (3496) 45-80-00</p>
     </header>
     <main>
       <section class="camera">
-        <h1 class="camera__title">
-          Системы видеонаблюдения по отличной цене в Ноябрьске
-        </h1>
-        <button class="camera__button">Подключить</button>
+        <div class="camera-block">
+          <h1 class="camera-block__title">
+            Системы видеонаблюдения по отличной цене в Ноябрьске
+          </h1>
+          <button class="camera-block__button">Подключить</button>
+        </div>
+        <div class="camera-image">
+          <img src="./images/cover.svg" alt="camera" />
+        </div>
       </section>
       <section class="services">
         <h3 class="servises__title">Доступные услуги</h3>
-        <ul class="services__list">
-          <li class="services__list-item">
-            <div class="item__image-block">
-              <img src="" alt="" />
+        <ul class="services-list">
+          <li class="list-item">
+            <div class="list-item-image">
+              <img src="list-item-image__img" alt="camera" />
             </div>
-            <h4 class="item__title">Городские камеры</h4>
-            <p class="item__subtitle">
+            <h4 class="list-item__title">Городские камеры</h4>
+            <p class="list-item__subtitle">
               Будьте в курсе всех событий не выходя из дома
             </p>
-            <div class="item__footer">
-              <p class="item__footer-price">0<span>Руб/Мес</span></p>
+            <div class="list-item-footer">
+              <p class="list-item-footer__price">
+                0<span class="list-item-footer__price-rub">Руб</span
+                ><span class="list-item-footer__price-mon">Мес</span>
+              </p>
             </div>
           </li>
         </ul>
