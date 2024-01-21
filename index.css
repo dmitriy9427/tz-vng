@@ -246,9 +246,6 @@ button {
   }
 }
 
-.camera-image__img {
-}
-
 .services {
   background-color: rgba(255, 255, 255, 1);
 }
@@ -271,7 +268,15 @@ button {
   }
 
   @media (max-width: 796px) {
-    left: 73%;
+    left: 72.8%;
+  }
+
+  @media (max-width: 500px) {
+    left: 70%;
+  }
+
+  @media (max-width: 420px) {
+    left: 67%;
   }
 }
 
@@ -296,10 +301,18 @@ button {
   @media (max-width: 1510px) {
     font-size: 14px;
   }
+
+  @media (max-width: 420px) {
+    font-size: 10px;
+  }
 }
 
 .services__button-icon {
   margin-left: 20px;
+
+  @media (max-width: 420px) {
+    margin-left: 10px;
+  }
 }
 
 .servises__title {
