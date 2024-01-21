@@ -15,51 +15,283 @@
   <body>
     <header class="header">
       <img class="header__logo" src="./images/logo.svg" alt="icon-logo" />
-      <nav class="navigation">
+      <nav class="header-navigation">
         <ul class="navigation-list">
           <li class="navigation-list__item">Интернет</li>
           <li class="navigation-list__item">Телевидение</li>
-          <li class="navigation-list__item">Выггодно</li>
-          <li class="navigation-list__item">Видеонаблюдение</li>
-          <li class="navigation-list__item">Оборудование</li>
-          <li class="navigation-list__item">Информация</li>
+
+          <li class="navigation-list__item">
+            Выгодно
+            <ul class="item-list">
+              <li class="item-list-element">Интернет+TV</li>
+              <li class="item-list-element">Конструктор тарифа</li>
+            </ul>
+          </li>
+
+          <li class="navigation-list__item">
+            Видеонаблюдение
+            <ul class="item-list">
+              <li class="item-list-element">Интернет+TV</li>
+              <li class="item-list-element">Конструктор тарифа</li>
+            </ul>
+          </li>
+          <li class="navigation-list__item">
+            Оборудование
+            <ul class="item-list">
+              <li class="item-list-element">Интернет+TV</li>
+              <li class="item-list-element">Конструктор тарифа</li>
+            </ul>
+          </li>
+          <li class="navigation-list__item">
+            Информация
+            <ul class="item-list">
+              <li class="item-list-element">Новости</li>
+              <li class="item-list-element">Вакансии</li>
+            </ul>
+          </li>
           <li class="navigation-list__item">Контакты</li>
         </ul>
       </nav>
-      <p>+7 (3496) 45-80-00</p>
+      <p class="header-contacts">+7 (3496) 45-80-00</p>
+      <div class="header-buttons">
+        <img
+          class="header-buttons__user"
+          src="./images/user.svg"
+          alt="user-icon"
+        />
+        <img
+          class="header-buttons__burger"
+          src="./images/burger.svg"
+          alt="menu-icon"
+        />
+      </div>
     </header>
     <main>
       <section class="camera">
         <div class="camera-block">
           <h1 class="camera-block__title">
-            Системы видеонаблюдения по отличной цене в Ноябрьске
+            Системы видеонаблюдения по отличной цене <br />
+            в Ноябрьске
           </h1>
           <button class="camera-block__button">Подключить</button>
         </div>
         <div class="camera-image">
-          <img src="./images/cover.svg" alt="camera" />
+          <img
+            class="camera-image__img"
+            src="./images/cover.svg"
+            alt="camera"
+          />
         </div>
       </section>
-      <section class="services">
+      <div class="services">
+        <div class="div">
+          <button class="services__button">
+            Оплатить услуги
+            <img
+              class="services__button-icon"
+              src="./images/wallet-3.svg"
+              alt="icon-wallet"
+            />
+          </button>
+        </div>
+
         <h3 class="servises__title">Доступные услуги</h3>
         <ul class="services-list">
           <li class="list-item">
             <div class="list-item-image">
-              <img src="list-item-image__img" alt="camera" />
+              <img
+                class="list-item-image__img"
+                src="./images/1.png"
+                alt="camera"
+              />
             </div>
             <h4 class="list-item__title">Городские камеры</h4>
             <p class="list-item__subtitle">
               Будьте в курсе всех событий не выходя из дома
             </p>
             <div class="list-item-footer">
-              <p class="list-item-footer__price">
-                0<span class="list-item-footer__price-rub">Руб</span
-                ><span class="list-item-footer__price-mon">Мес</span>
-              </p>
+              <div class="list-item-footer__price">
+                <span class="list-item-footer__price-span">0</span>
+                <div class="list-item-footer__values">
+                  <span class="list-item-footer__price-rub">руб</span
+                  ><span class="list-item-footer__price-mon">мес</span>
+                </div>
+              </div>
+              <button class="list-item-footer__button">Узнать подробнее</button>
+            </div>
+          </li>
+
+          <li class="list-item">
+            <div class="list-item-image">
+              <img
+                class="list-item-image__img"
+                src="./images/1.png"
+                alt="camera"
+              />
+            </div>
+            <h4 class="list-item__title">Городские камеры</h4>
+            <p class="list-item__subtitle">
+              Будьте в курсе всех событий не выходя из дома
+            </p>
+            <div class="list-item-footer">
+              <div class="list-item-footer__price">
+                <span class="list-item-footer__price-span">0</span>
+                <div class="list-item-footer__values">
+                  <span class="list-item-footer__price-rub">руб</span
+                  ><span class="list-item-footer__price-mon">мес</span>
+                </div>
+              </div>
+              <button class="list-item-footer__button">Узнать подробнее</button>
+            </div>
+          </li>
+
+          <li class="list-item">
+            <div class="list-item-image">
+              <img
+                class="list-item-image__img"
+                src="./images/1.png"
+                alt="camera"
+              />
+            </div>
+            <h4 class="list-item__title">Городские камеры</h4>
+            <p class="list-item__subtitle">
+              Будьте в курсе всех событий не выходя из дома
+            </p>
+            <div class="list-item-footer">
+              <div class="list-item-footer__price">
+                <span class="list-item-footer__price-span">0</span>
+                <div class="list-item-footer__values">
+                  <span class="list-item-footer__price-rub">руб</span
+                  ><span class="list-item-footer__price-mon">мес</span>
+                </div>
+              </div>
+              <button class="list-item-footer__button">Узнать подробнее</button>
+            </div>
+          </li>
+
+          <li class="list-item">
+            <div class="list-item-image">
+              <img
+                class="list-item-image__img"
+                src="./images/1.png"
+                alt="camera"
+              />
+            </div>
+            <h4 class="list-item__title">Городские камеры</h4>
+            <p class="list-item__subtitle">
+              Будьте в курсе всех событий не выходя из дома
+            </p>
+            <div class="list-item-footer">
+              <div class="list-item-footer__price">
+                <span class="list-item-footer__price-span">0</span>
+                <div class="list-item-footer__values">
+                  <span class="list-item-footer__price-rub">руб</span
+                  ><span class="list-item-footer__price-mon">мес</span>
+                </div>
+              </div>
+              <button class="list-item-footer__button">Узнать подробнее</button>
+            </div>
+          </li>
+
+          <li class="list-item">
+            <div class="list-item-image">
+              <img
+                class="list-item-image__img"
+                src="./images/2.png"
+                alt="camera"
+              />
+            </div>
+            <h4 class="list-item__title">Дворовые камеры</h4>
+            <p class="list-item__subtitle">
+              Наблюдайте за вашим имуществом не выходя из дома через любое
+              устройство
+            </p>
+            <div class="list-item-footer">
+              <div class="list-item-footer__price">
+                <span class="list-item-footer__price-span">0</span>
+                <div class="list-item-footer__values">
+                  <span class="list-item-footer__price-rub">руб</span
+                  ><span class="list-item-footer__price-mon">мес</span>
+                </div>
+              </div>
+              <button class="list-item-footer__button">Узнать подробнее</button>
+            </div>
+          </li>
+
+          <li class="list-item">
+            <div class="list-item-image">
+              <img
+                class="list-item-image__img"
+                src="./images/3.png"
+                alt="camera"
+              />
+            </div>
+            <h4 class="list-item__title">Персональные камеры</h4>
+            <p class="list-item__subtitle">
+              Где бы вы ни находились, вы всегда можете узнать о происходящем
+              дома с любого устройства
+            </p>
+            <div class="list-item-footer">
+              <div class="list-item-footer__price">
+                <p class="list-item-footer__price-paragraph">от</p>
+                <span class="list-item-footer__price-span">350</span>
+                <div class="list-item-footer__values">
+                  <span class="list-item-footer__price-rub">руб</span
+                  ><span class="list-item-footer__price-mon">мес</span>
+                </div>
+              </div>
+              <button class="list-item-footer__button">Узнать подробнее</button>
             </div>
           </li>
         </ul>
-      </section>
+      </div>
     </main>
+
+    <div class="header__popup active">
+      <div class="popup-close">
+        <img
+          class="popup-close__icon"
+          src="./images/close.svg"
+          alt="close-icon"
+        />
+      </div>
+      <ul class="header__popup-list">
+        <li class="popup-list__item">Интернет</li>
+        <li class="popup-list__item">Телевидение</li>
+
+        <li class="popup-list__item">
+          Выгодно
+          <ul class="item-popup__list">
+            <li class="item-popup__list-element">Интернет+TV</li>
+            <li class="item-popup__list-element">Конструктор тарифа</li>
+          </ul>
+        </li>
+
+        <li class="popup-list__item">
+          Видеонаблюдение
+          <ul class="item-popup__list">
+            <li class="item-popup__list-element">Интернет+TV</li>
+            <li class="item-popup__list-element">Конструктор тарифа</li>
+          </ul>
+        </li>
+        <li class="popup-list__item">
+          Оборудование
+          <ul class="item-popup__list">
+            <li class="item-popup__list-element">Интернет+TV</li>
+            <li class="item-popup__list-element">Конструктор тарифа</li>
+          </ul>
+        </li>
+        <li class="popup-list__item">
+          Информация
+          <ul class="item-list">
+            <li class="item-popup__list-element">Новости</li>
+            <li class="item-popup__list-element">Вакансии</li>
+          </ul>
+        </li>
+        <li class="popup-list__item">Контакты</li>
+      </ul>
+    </div>
+
+    <script src="./index.js"></script>
   </body>
 </html>
