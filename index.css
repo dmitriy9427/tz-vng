@@ -182,28 +182,17 @@ button {
 }
 
 .camera {
-  /* grid-template-columns: auto auto; */
-  max-width: 1920px;
   width: 100%;
   background-color: rgba(248, 248, 248, 1);
   display: flex;
   justify-content: center;
-
-  /* @media (max-width: 769px) {
-    position: relative;
-  } */
 }
 
 .block {
-  /* display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center; */
   width: 100%;
   background-image: url("./images/cover.svg");
   background-repeat: no-repeat;
   background-position: right;
-  /* margin-right: auto; */
-  /* margin-left: auto; */
 }
 
 .camera-block {
@@ -275,6 +264,7 @@ button {
 }
 
 .services {
+  margin: 0 auto;
   background-color: rgba(255, 255, 255, 1);
 }
 
@@ -434,6 +424,7 @@ button {
 .list-item {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   padding: 40px 30px 20px;
   box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.12);
 
@@ -479,6 +470,11 @@ button {
   flex-direction: row;
   justify-content: space-between;
   margin-top: 47px;
+
+  @media (max-width: 1450px) {
+    flex-direction: column;
+    row-gap: 12px;
+  }
 }
 
 .list-item-footer .list-item-footer__price {
